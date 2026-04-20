@@ -1,0 +1,137 @@
+﻿*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), transparent 28%),
+              radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.16), transparent 22%),
+              linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  color: #e2e8f0;
+}
+
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 32px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card{
+  min-height: 340px;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  -webkit-backdrop-filter: blur(18px);
+backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.35);
+}
+
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.top img{
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(226, 232, 240, 0.22);
+  padding: 4px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.top button{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(226, 232, 240, 0.2);
+  padding: 6px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.center h3{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.center h3 span{
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+.center h2{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.center .tag{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.center .tag h4{
+  font-size: 11px;
+  background-color: rgba(226, 232, 240, 0.12);
+  color: #e2e8f0;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  padding-top: 18px;
+}
+
+.bottom button{
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bottom h3{
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.bottom p{
+  font-size: 11px;
+  color: #cbd5e1;
+}
